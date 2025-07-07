@@ -3,16 +3,37 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    background-color: aqua;
   }
   
   h1 {
-    color: #333;
+    color: #7a075f;
+    background-color: rgb(178, 96, 129);
+    border: 2px solid rgb(195, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
   }
+
+  h1:hover{
+    color: rgb(139, 13, 13);
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  
   
   button {
     padding: 10px 20px;
     font-size: 16px;
     margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    background-color: red;
+  	transform: scale(1.2);
+    transition: transform 0.2s ease;
   }
   
   #result {
@@ -23,6 +44,6 @@ body {
   
   #playerScore, #computerScore {
     font-weight: bold;
-    color: #333;
+    color: #0cad39;
   }
   
